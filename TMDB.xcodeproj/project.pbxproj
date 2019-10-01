@@ -12,6 +12,11 @@
 		CE047CC223433E2C006714ED /* BaseModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE047CC123433E2C006714ED /* BaseModelProtocol.swift */; };
 		CE047CC423433E61006714ED /* ListActorsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE047CC323433E61006714ED /* ListActorsProtocols.swift */; };
 		CE047CC623433ECA006714ED /* BaseViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE047CC523433ECA006714ED /* BaseViewProtocol.swift */; };
+		CE6A0DDC234349690020DACF /* ListActorsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A0DDB234349690020DACF /* ListActorsModel.swift */; };
+		CE6A0DDE234349800020DACF /* ListActorsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A0DDD234349800020DACF /* ListActorsPresenter.swift */; };
+		CE6A0DE0234349930020DACF /* ListActorsAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A0DDF234349930020DACF /* ListActorsAdaptor.swift */; };
+		CE6A0DE323434D4D0020DACF /* ActorsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A0DE123434D4D0020DACF /* ActorsTableViewCell.swift */; };
+		CE6A0DE423434D4D0020DACF /* ActorsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6A0DE223434D4D0020DACF /* ActorsTableViewCell.xib */; };
 		F71BE3BB23327215005A0BA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71BE3BA23327215005A0BA4 /* AppDelegate.swift */; };
 		F71BE3C223327217005A0BA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F71BE3C123327217005A0BA4 /* Assets.xcassets */; };
 		F71BE3D223327286005A0BA4 /* ListActorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71BE3D023327286005A0BA4 /* ListActorsViewController.swift */; };
@@ -33,7 +38,7 @@
 		F7BF21ED233AA202009DBDA5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BF21E7233AA202009DBDA5 /* BaseViewController.swift */; };
 		F7BF21EF233AA202009DBDA5 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BF21E9233AA202009DBDA5 /* UIViewController+Extension.swift */; };
 		F7BF21F0233AA202009DBDA5 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BF21EA233AA202009DBDA5 /* BasePresenter.swift */; };
-		F7BF21F2233AA202009DBDA5 /* BaseListAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BF21EC233AA202009DBDA5 /* BaseListAdaptor.swift */; };
+		F7BF21F2233AA202009DBDA5 /* BaseListAdaptorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BF21EC233AA202009DBDA5 /* BaseListAdaptorProtocol.swift */; };
 		F7BF21F6233B9952009DBDA5 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BF21F5233B9952009DBDA5 /* BaseModel.swift */; };
 		F7BF2224233CB36A009DBDA5 /* AppDelegate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BF2223233CB36A009DBDA5 /* AppDelegate+Extensions.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +51,11 @@
 		CE047CC123433E2C006714ED /* BaseModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModelProtocol.swift; sourceTree = "<group>"; };
 		CE047CC323433E61006714ED /* ListActorsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListActorsProtocols.swift; sourceTree = "<group>"; };
 		CE047CC523433ECA006714ED /* BaseViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewProtocol.swift; sourceTree = "<group>"; };
+		CE6A0DDB234349690020DACF /* ListActorsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListActorsModel.swift; sourceTree = "<group>"; };
+		CE6A0DDD234349800020DACF /* ListActorsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListActorsPresenter.swift; sourceTree = "<group>"; };
+		CE6A0DDF234349930020DACF /* ListActorsAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListActorsAdaptor.swift; sourceTree = "<group>"; };
+		CE6A0DE123434D4D0020DACF /* ActorsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorsTableViewCell.swift; sourceTree = "<group>"; };
+		CE6A0DE223434D4D0020DACF /* ActorsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActorsTableViewCell.xib; sourceTree = "<group>"; };
 		E88B76BD53217998401F565B /* Pods-Sample MVP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample MVP.debug.xcconfig"; path = "Target Support Files/Pods-Sample MVP/Pods-Sample MVP.debug.xcconfig"; sourceTree = "<group>"; };
 		F71BE3B723327215005A0BA4 /* TMDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F71BE3BA23327215005A0BA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,7 +80,7 @@
 		F7BF21E7233AA202009DBDA5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F7BF21E9233AA202009DBDA5 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		F7BF21EA233AA202009DBDA5 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
-		F7BF21EC233AA202009DBDA5 /* BaseListAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListAdaptor.swift; sourceTree = "<group>"; };
+		F7BF21EC233AA202009DBDA5 /* BaseListAdaptorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListAdaptorProtocol.swift; sourceTree = "<group>"; };
 		F7BF21F5233B9952009DBDA5 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		F7BF2223233CB36A009DBDA5 /* AppDelegate+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Extensions.swift"; sourceTree = "<group>"; };
 		F97C5A53175785566AF881A9 /* Pods_TMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +117,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CE6A0DDA234349250020DACF /* Base Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F7BF21EC233AA202009DBDA5 /* BaseListAdaptorProtocol.swift */,
+				CE047CBF23433D00006714ED /* BasePresenterProtocols.swift */,
+				CE047CC123433E2C006714ED /* BaseModelProtocol.swift */,
+				CE047CC523433ECA006714ED /* BaseViewProtocol.swift */,
+			);
+			path = "Base Protocols";
+			sourceTree = "<group>";
+		};
 		F71BE3AE23327215005A0BA4 = {
 			isa = PBXGroup;
 			children = (
@@ -135,7 +156,7 @@
 				F71BE3F8233290DF005A0BA4 /* UI */,
 				F71BE3CC2332721D005A0BA4 /* Networking */,
 				F71BE3FD2332910B005A0BA4 /* Supporting Files */,
-				F71BE3CD23327223005A0BA4 /* Scense */,
+				F71BE3CD23327223005A0BA4 /* Scenes */,
 			);
 			path = TMDB;
 			sourceTree = "<group>";
@@ -149,14 +170,14 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		F71BE3CD23327223005A0BA4 /* Scense */ = {
+		F71BE3CD23327223005A0BA4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
 				F71BE3CE23327252005A0BA4 /* ListActors */,
 				F71BE3CF2332725E005A0BA4 /* ActorDetails */,
 				F71BE40123329B12005A0BA4 /* ImagePreview */,
 			);
-			path = Scense;
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		F71BE3CE23327252005A0BA4 /* ListActors */ = {
@@ -165,6 +186,11 @@
 				CE047CC323433E61006714ED /* ListActorsProtocols.swift */,
 				F71BE3D023327286005A0BA4 /* ListActorsViewController.swift */,
 				F71BE3D123327286005A0BA4 /* ListActorsViewController.xib */,
+				CE6A0DDB234349690020DACF /* ListActorsModel.swift */,
+				CE6A0DDD234349800020DACF /* ListActorsPresenter.swift */,
+				CE6A0DDF234349930020DACF /* ListActorsAdaptor.swift */,
+				CE6A0DE123434D4D0020DACF /* ActorsTableViewCell.swift */,
+				CE6A0DE223434D4D0020DACF /* ActorsTableViewCell.xib */,
 			);
 			path = ListActors;
 			sourceTree = "<group>";
@@ -181,14 +207,11 @@
 		F71BE3D8233272BF005A0BA4 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				F7BF21EC233AA202009DBDA5 /* BaseListAdaptor.swift */,
-				F7BF21EA233AA202009DBDA5 /* BasePresenter.swift */,
-				CE047CBF23433D00006714ED /* BasePresenterProtocols.swift */,
 				F7BF21E7233AA202009DBDA5 /* BaseViewController.swift */,
-				F7BF21E9233AA202009DBDA5 /* UIViewController+Extension.swift */,
+				F7BF21EA233AA202009DBDA5 /* BasePresenter.swift */,
 				F7BF21F5233B9952009DBDA5 /* BaseModel.swift */,
-				CE047CC123433E2C006714ED /* BaseModelProtocol.swift */,
-				CE047CC523433ECA006714ED /* BaseViewProtocol.swift */,
+				F7BF21E9233AA202009DBDA5 /* UIViewController+Extension.swift */,
+				CE6A0DDA234349250020DACF /* Base Protocols */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -334,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F71BE3D7233272B2005A0BA4 /* ActorsDetailsViewController.xib in Resources */,
+				CE6A0DE423434D4D0020DACF /* ActorsTableViewCell.xib in Resources */,
 				F71BE3FB233290DF005A0BA4 /* LaunchScreen.storyboard in Resources */,
 				F71BE3C223327217005A0BA4 /* Assets.xcassets in Resources */,
 				F71BE3D323327286005A0BA4 /* ListActorsViewController.xib in Resources */,
@@ -393,10 +417,11 @@
 				F71BE3F423328C55005A0BA4 /* KnownFor.swift in Sources */,
 				F7BF21F0233AA202009DBDA5 /* BasePresenter.swift in Sources */,
 				F7BF21F6233B9952009DBDA5 /* BaseModel.swift in Sources */,
+				CE6A0DE0234349930020DACF /* ListActorsAdaptor.swift in Sources */,
 				F71BE3D223327286005A0BA4 /* ListActorsViewController.swift in Sources */,
 				F71BE40423329B2C005A0BA4 /* ImagePreviewViewController.swift in Sources */,
 				F7BF21EF233AA202009DBDA5 /* UIViewController+Extension.swift in Sources */,
-				F7BF21F2233AA202009DBDA5 /* BaseListAdaptor.swift in Sources */,
+				F7BF21F2233AA202009DBDA5 /* BaseListAdaptorProtocol.swift in Sources */,
 				F71BE3E9233275A9005A0BA4 /* NetworkDefaults.swift in Sources */,
 				CE047CC423433E61006714ED /* ListActorsProtocols.swift in Sources */,
 				F7BF21ED233AA202009DBDA5 /* BaseViewController.swift in Sources */,
@@ -407,9 +432,12 @@
 				CE047CC223433E2C006714ED /* BaseModelProtocol.swift in Sources */,
 				F71BE3E6233275A9005A0BA4 /* StaticHeaderPlugin.swift in Sources */,
 				CE047CC623433ECA006714ED /* BaseViewProtocol.swift in Sources */,
+				CE6A0DDC234349690020DACF /* ListActorsModel.swift in Sources */,
 				F71BE3F523328C55005A0BA4 /* APIResponse.swift in Sources */,
 				F71BE3F323328C55005A0BA4 /* Person.swift in Sources */,
 				F71BE3D6233272B2005A0BA4 /* ActorsDetailsViewController.swift in Sources */,
+				CE6A0DDE234349800020DACF /* ListActorsPresenter.swift in Sources */,
+				CE6A0DE323434D4D0020DACF /* ActorsTableViewCell.swift in Sources */,
 				F71BE3BB23327215005A0BA4 /* AppDelegate.swift in Sources */,
 				F71BE3EC233275A9005A0BA4 /* NetworkError.swift in Sources */,
 				F71BE3E7233275A9005A0BA4 /* NetworkService+ActorsService.swift in Sources */,

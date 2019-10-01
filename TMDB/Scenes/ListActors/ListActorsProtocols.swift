@@ -7,7 +7,11 @@
 //
 
 import Foundation
-protocol ListActorsPresenterProtocol: BasePresenterProtocol {
+protocol ListActorsPresenterProtocol: BasePresenterProtoc
+func getActors(forPage page: Int, compelation: @escaping (Result<Any, Error>) -> Void) {
+    <#code#>
+}
+ol {
     
     var currentPage:Int { get set }
     
@@ -24,5 +28,9 @@ protocol ListActorsViewProtocol:BaseViewProtocol {
 }
 
 protocol ListActorsModelProtocol:BaseModelProtocol {
-    func getActors(forPage page:Int , compelation: Result<Any,Error>)
+    func getActors(forPage page:Int ,  compelation: @escaping (Result<Any,Error>) -> Void)
+}
+
+protocol ListActorsPresenterAssembable : BasePresenterAssembable{
+    
 }

@@ -10,10 +10,7 @@ import Foundation
 
 @objc
 protocol PresenterLifeCycleProtocol {
-    
-    
-    @objc
-    optional func loadView()
+
     @objc
     optional func viewDidLoad()
     @objc
@@ -24,10 +21,6 @@ protocol PresenterLifeCycleProtocol {
     optional func viewWillDisappear()
     @objc
     optional func viewDidDisappear()
-}
-
-protocol BasePresenterProtocol:PresenterLifeCycleProtocol {
-    
 }
 
 protocol BasePresenterAssembable {
@@ -42,3 +35,9 @@ protocol BasePresenterAssembable {
     
     init(view: View, model: Model)
 }
+
+protocol BasePresenterProtocol:PresenterLifeCycleProtocol {
+    
+}
+
+
