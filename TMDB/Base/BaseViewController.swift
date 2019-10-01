@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-class BaseViewController<Presenter:BasePresenterProtocol>: UIViewController, BaseViewProtocal {
+class BaseViewController<Presenter:BasePresenterProtocol>: UIViewController, BaseViewProtocol {
     
     // MARK: - Public Variables
     

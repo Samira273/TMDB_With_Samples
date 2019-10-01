@@ -1,14 +1,13 @@
 //
-//  ListActorsProtocals.swift
+//  ListActorsProtocols.swift
 //  TMDB
 //
-//  Created by Bassem Abbas on 9/24/19.
+//  Created by Samira.Marassy on 10/1/19.
 //  Copyright © 2019 Ibtikar Technologies, Co. Ltd. All rights reserved.
 //
 
 import Foundation
-
-protocol ListActorsPresenterProtocal: BasePresenterProtocol {
+protocol ListActorsPresenterProtocol: BasePresenterProtocol {
     
     var currentPage:Int { get set }
     
@@ -20,10 +19,10 @@ protocol ListActorsPresenterProtocal: BasePresenterProtocol {
     
 }
 
-protocol ListActorsViewProtocal:BaseViewProtocal {
+protocol ListActorsViewProtocol:BaseViewProtocol {
     
 }
 
-protocol ListActorsModelProtocal:BaseModelProtocal {
+protocol ListActorsModelProtocol:BaseModelProtocol {
     func getActors(forPage page:Int , compelation: Result<Any,Error>)
 }

@@ -1,15 +1,14 @@
 //
-//  BaseViewProtocal
+//  BaseViewProtocol.swift
 //  TMDB
 //
-//  Created Bassem Abbas on 9/24/19.
+//  Created by Samira.Marassy on 10/1/19.
 //  Copyright © 2019 Ibtikar Technologies, Co. Ltd. All rights reserved.
 //
 
 import Foundation
-
 @objc
-protocol BaseViewProtocal: ViewLoadable, ViewFetchable, ViewMessageable {
+protocol BaseViewProtocol: ViewLoadable, ViewFetchable, ViewMessageable {
     
 }
 

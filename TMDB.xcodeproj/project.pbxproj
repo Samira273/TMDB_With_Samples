@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		98B8CD6049353E68D10D88B7 /* Pods_TMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F97C5A53175785566AF881A9 /* Pods_TMDB.framework */; };
+		CE047CC023433D00006714ED /* BasePresenterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE047CBF23433D00006714ED /* BasePresenterProtocols.swift */; };
+		CE047CC223433E2C006714ED /* BaseModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE047CC123433E2C006714ED /* BaseModelProtocol.swift */; };
+		CE047CC423433E61006714ED /* ListActorsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE047CC323433E61006714ED /* ListActorsProtocols.swift */; };
+		CE047CC623433ECA006714ED /* BaseViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE047CC523433ECA006714ED /* BaseViewProtocol.swift */; };
 		F71BE3BB23327215005A0BA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71BE3BA23327215005A0BA4 /* AppDelegate.swift */; };
 		F71BE3C223327217005A0BA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F71BE3C123327217005A0BA4 /* Assets.xcassets */; };
 		F71BE3D223327286005A0BA4 /* ListActorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71BE3D023327286005A0BA4 /* ListActorsViewController.swift */; };
@@ -26,15 +30,11 @@
 		F71BE3FB233290DF005A0BA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F71BE3F9233290DF005A0BA4 /* LaunchScreen.storyboard */; };
 		F71BE40423329B2C005A0BA4 /* ImagePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71BE40223329B2C005A0BA4 /* ImagePreviewViewController.swift */; };
 		F71BE40523329B2C005A0BA4 /* ImagePreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F71BE40323329B2C005A0BA4 /* ImagePreviewViewController.xib */; };
-		F7BF21CE233A3A61009DBDA5 /* ListActorsProtocals.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BF21CD233A3A61009DBDA5 /* ListActorsProtocals.swift */; };
 		F7BF21ED233AA202009DBDA5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BF21E7233AA202009DBDA5 /* BaseViewController.swift */; };
-		F7BF21EE233AA202009DBDA5 /* BasePresenterProtocals.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BF21E8233AA202009DBDA5 /* BasePresenterProtocals.swift */; };
 		F7BF21EF233AA202009DBDA5 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BF21E9233AA202009DBDA5 /* UIViewController+Extension.swift */; };
 		F7BF21F0233AA202009DBDA5 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BF21EA233AA202009DBDA5 /* BasePresenter.swift */; };
-		F7BF21F1233AA202009DBDA5 /* BaseViewProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BF21EB233AA202009DBDA5 /* BaseViewProtocal.swift */; };
 		F7BF21F2233AA202009DBDA5 /* BaseListAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BF21EC233AA202009DBDA5 /* BaseListAdaptor.swift */; };
 		F7BF21F6233B9952009DBDA5 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BF21F5233B9952009DBDA5 /* BaseModel.swift */; };
-		F7BF21F8233B9960009DBDA5 /* BaseModelProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BF21F7233B9960009DBDA5 /* BaseModelProtocal.swift */; };
 		F7BF2224233CB36A009DBDA5 /* AppDelegate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BF2223233CB36A009DBDA5 /* AppDelegate+Extensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +42,10 @@
 		0FCAF620690F52FAD3EA7352 /* Pods-TMDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDB.debug.xcconfig"; path = "Target Support Files/Pods-TMDB/Pods-TMDB.debug.xcconfig"; sourceTree = "<group>"; };
 		14E7A82E9B83510EE763DD65 /* Pods-TMDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDB.release.xcconfig"; path = "Target Support Files/Pods-TMDB/Pods-TMDB.release.xcconfig"; sourceTree = "<group>"; };
 		B03670A045BAB1A8BE150F70 /* Pods-Sample MVP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample MVP.release.xcconfig"; path = "Target Support Files/Pods-Sample MVP/Pods-Sample MVP.release.xcconfig"; sourceTree = "<group>"; };
+		CE047CBF23433D00006714ED /* BasePresenterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenterProtocols.swift; sourceTree = "<group>"; };
+		CE047CC123433E2C006714ED /* BaseModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModelProtocol.swift; sourceTree = "<group>"; };
+		CE047CC323433E61006714ED /* ListActorsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListActorsProtocols.swift; sourceTree = "<group>"; };
+		CE047CC523433ECA006714ED /* BaseViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewProtocol.swift; sourceTree = "<group>"; };
 		E88B76BD53217998401F565B /* Pods-Sample MVP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample MVP.debug.xcconfig"; path = "Target Support Files/Pods-Sample MVP/Pods-Sample MVP.debug.xcconfig"; sourceTree = "<group>"; };
 		F71BE3B723327215005A0BA4 /* TMDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F71BE3BA23327215005A0BA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,15 +67,11 @@
 		F71BE3FE2332910B005A0BA4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F71BE40223329B2C005A0BA4 /* ImagePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewViewController.swift; sourceTree = "<group>"; };
 		F71BE40323329B2C005A0BA4 /* ImagePreviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagePreviewViewController.xib; sourceTree = "<group>"; };
-		F7BF21CD233A3A61009DBDA5 /* ListActorsProtocals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListActorsProtocals.swift; sourceTree = "<group>"; };
 		F7BF21E7233AA202009DBDA5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		F7BF21E8233AA202009DBDA5 /* BasePresenterProtocals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenterProtocals.swift; sourceTree = "<group>"; };
 		F7BF21E9233AA202009DBDA5 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		F7BF21EA233AA202009DBDA5 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
-		F7BF21EB233AA202009DBDA5 /* BaseViewProtocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewProtocal.swift; sourceTree = "<group>"; };
 		F7BF21EC233AA202009DBDA5 /* BaseListAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListAdaptor.swift; sourceTree = "<group>"; };
 		F7BF21F5233B9952009DBDA5 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
-		F7BF21F7233B9960009DBDA5 /* BaseModelProtocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModelProtocal.swift; sourceTree = "<group>"; };
 		F7BF2223233CB36A009DBDA5 /* AppDelegate+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Extensions.swift"; sourceTree = "<group>"; };
 		F97C5A53175785566AF881A9 /* Pods_TMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -162,7 +162,7 @@
 		F71BE3CE23327252005A0BA4 /* ListActors */ = {
 			isa = PBXGroup;
 			children = (
-				F7BF21CD233A3A61009DBDA5 /* ListActorsProtocals.swift */,
+				CE047CC323433E61006714ED /* ListActorsProtocols.swift */,
 				F71BE3D023327286005A0BA4 /* ListActorsViewController.swift */,
 				F71BE3D123327286005A0BA4 /* ListActorsViewController.xib */,
 			);
@@ -183,12 +183,12 @@
 			children = (
 				F7BF21EC233AA202009DBDA5 /* BaseListAdaptor.swift */,
 				F7BF21EA233AA202009DBDA5 /* BasePresenter.swift */,
-				F7BF21E8233AA202009DBDA5 /* BasePresenterProtocals.swift */,
+				CE047CBF23433D00006714ED /* BasePresenterProtocols.swift */,
 				F7BF21E7233AA202009DBDA5 /* BaseViewController.swift */,
-				F7BF21EB233AA202009DBDA5 /* BaseViewProtocal.swift */,
 				F7BF21E9233AA202009DBDA5 /* UIViewController+Extension.swift */,
 				F7BF21F5233B9952009DBDA5 /* BaseModel.swift */,
-				F7BF21F7233B9960009DBDA5 /* BaseModelProtocal.swift */,
+				CE047CC123433E2C006714ED /* BaseModelProtocol.swift */,
+				CE047CC523433ECA006714ED /* BaseViewProtocol.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -393,20 +393,20 @@
 				F71BE3F423328C55005A0BA4 /* KnownFor.swift in Sources */,
 				F7BF21F0233AA202009DBDA5 /* BasePresenter.swift in Sources */,
 				F7BF21F6233B9952009DBDA5 /* BaseModel.swift in Sources */,
-				F7BF21EE233AA202009DBDA5 /* BasePresenterProtocals.swift in Sources */,
 				F71BE3D223327286005A0BA4 /* ListActorsViewController.swift in Sources */,
 				F71BE40423329B2C005A0BA4 /* ImagePreviewViewController.swift in Sources */,
-				F7BF21F8233B9960009DBDA5 /* BaseModelProtocal.swift in Sources */,
 				F7BF21EF233AA202009DBDA5 /* UIViewController+Extension.swift in Sources */,
 				F7BF21F2233AA202009DBDA5 /* BaseListAdaptor.swift in Sources */,
 				F71BE3E9233275A9005A0BA4 /* NetworkDefaults.swift in Sources */,
-				F7BF21F1233AA202009DBDA5 /* BaseViewProtocal.swift in Sources */,
-				F7BF21CE233A3A61009DBDA5 /* ListActorsProtocals.swift in Sources */,
+				CE047CC423433E61006714ED /* ListActorsProtocols.swift in Sources */,
 				F7BF21ED233AA202009DBDA5 /* BaseViewController.swift in Sources */,
 				F71BE3EB233275A9005A0BA4 /* NetworkManager.swift in Sources */,
 				F7BF2224233CB36A009DBDA5 /* AppDelegate+Extensions.swift in Sources */,
+				CE047CC023433D00006714ED /* BasePresenterProtocols.swift in Sources */,
 				F71BE3E8233275A9005A0BA4 /* ProductService.swift in Sources */,
+				CE047CC223433E2C006714ED /* BaseModelProtocol.swift in Sources */,
 				F71BE3E6233275A9005A0BA4 /* StaticHeaderPlugin.swift in Sources */,
+				CE047CC623433ECA006714ED /* BaseViewProtocol.swift in Sources */,
 				F71BE3F523328C55005A0BA4 /* APIResponse.swift in Sources */,
 				F71BE3F323328C55005A0BA4 /* Person.swift in Sources */,
 				F71BE3D6233272B2005A0BA4 /* ActorsDetailsViewController.swift in Sources */,

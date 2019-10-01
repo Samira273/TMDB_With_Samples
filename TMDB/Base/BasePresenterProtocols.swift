@@ -1,8 +1,8 @@
 //
-//  BaseProtocals
+//  BasePresenterProtocols.swift
 //  TMDB
 //
-//  Created Bassem Abbas on 9/24/19.
+//  Created by Samira.Marassy on 10/1/19.
 //  Copyright © 2019 Ibtikar Technologies, Co. Ltd. All rights reserved.
 //
 
@@ -32,8 +32,8 @@ protocol BasePresenterProtocol:PresenterLifeCycleProtocol {
 
 protocol BasePresenterAssembable {
     
-    associatedtype View where View : BaseViewProtocal
-    associatedtype Model where Model : BaseModelProtocal
+    associatedtype View where View : BaseViewProtocol
+    associatedtype Model where Model : BaseModelProtocol
     
     /// weak refrance to view
     var view: View? { get set }
