@@ -21,12 +21,16 @@ class ListActorsAdaptor : NSObject , BaseListAdapterProtocol, UITableViewDataSou
     var showEmptyState: ((Bool) -> Void)?
     
     func add(item: Person) {
-        
+//        list?.append(item)
     }
     
     func add(items: [Person]) {
+//        for person in items{
+//            self.add(item: person)
+//        }
+//        list = list ?? [] + items
+//        list? += items
         list = items
-    
     }
     
     func update(item: Person) {
@@ -60,19 +64,22 @@ class ListActorsAdaptor : NSObject , BaseListAdapterProtocol, UITableViewDataSou
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
+        
         tableView.register(UINib(nibName: "ActorsTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         let cell : ActorsTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ActorsTableViewCell
+        
         cell.cellLabel.text = list?[indexPath.row].name
-//        let path = list?[indexPath.row].profilePath ?? " "
-//        let url = "https://image.tmdb.org/t/p/w500/"+path
         if let path = list?[indexPath.row].profilePath {
-           let url = "https://image.tmdb.org/t/p/w500/"+path
-           cell.cellImage.sd_setImage(with: URL(string: url), placeholderImage: UIImage(named: "avatar"))
+            let url = "https://image.tmdb.org/t/p/w500/"+path
+            cell.cellImage.sd_setImage(with: URL(string: url), placeholderImage: UIImage(named: "avatar"))
         }
         
-       return cell
+//        if let lastCell = tableView.cellForRow(at: IndexPath(row: tableView.numberOfRows(inSection: 0)-1, section: 0)) {
+//             let lastCellBottomY = lastCell.frame.maxY
+//             let delta = tableView.contentSize.height - lastCellBottomY
+//            if delta <
+//        }
+        return cell
     }
-    
     
 }

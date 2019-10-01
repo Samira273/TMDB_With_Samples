@@ -12,6 +12,10 @@ class ActorsTableViewCell: UITableViewCell {
 
     @IBOutlet weak var cellImage: UIImageView!
     @IBOutlet weak var cellLabel: UILabel!
+   
+
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

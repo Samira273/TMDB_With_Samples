@@ -13,6 +13,8 @@ class ListActorsViewController: BaseViewController<ListActorsPresenter> , UITabl
     @IBOutlet weak var actorsTable: UITableView!
      var actorsTableDataSource : ListActorsAdaptor?
     
+    @IBOutlet weak var activity: UIActivityIndicatorView!
+    private let myRefreshControler = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +22,23 @@ class ListActorsViewController: BaseViewController<ListActorsPresenter> , UITabl
         actorsTableDataSource = ListActorsAdaptor()
         actorsTable.dataSource = actorsTableDataSource
         presenter = ListActorsPresenter(view: self, model: ListActorsModel())
+        activity.isHidden = true
+        self.myRefreshControler.attributedTitle = NSAttributedString(string: "Refreshing")
+        myRefreshControler.addTarget(self, action: #selector(refresh), for: UIControl.Event.valueChanged)
+        actorsTable.refreshControl = myRefreshControler
         presenter.loadActors()
         actorsTable.reloadData()
+    }
+    
+    @objc func refresh(sender:AnyObject) {
+        // Code to refresh table view
+//        searchBar.resignFirstResponder()
+//        searchBar.endEditing(true)
+        //            homeScreenPresenter?.settingPageNo(page: 1)
+        //            homeScreenPresenter?.bringAndRender(caller : "refresh")
+        actorsTableDataSource?.clear(reload: true)
+        presenter.refreshActores()
+        self.myRefreshControler.endRefreshing()
     }
     
     func setData(persons : [Person]){
@@ -40,5 +57,16 @@ class ListActorsViewController: BaseViewController<ListActorsPresenter> , UITabl
     
     func showErrorMessage(title: String?, message: String?) {
         
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let y = scrollView.contentOffset.y/(scrollView.contentSize.height - scrollView.frame.size.height)
+        let relativeHeight = 1 - (actorsTable.rowHeight / (scrollView.contentSize.height - scrollView.frame.size.height))
+        if y >= relativeHeight{
+            presenter.loadMoreActores()
+            DispatchQueue.main.async {
+                self.actorsTable.reloadData()
+            }
+        }
     }
 }

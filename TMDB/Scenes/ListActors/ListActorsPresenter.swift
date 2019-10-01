@@ -43,15 +43,17 @@ class ListActorsPresenter : BasePresenter ,ListActorsPresenterProtocol , ListAct
             case .failure(let error):
                 self.view?.showErrorMessage(title: error.localizedDescription , message: "Network error")
             }
-            })
+        })
     }
     
     func refreshActores() {
-        
+        self.currentPage = 1
+        self.loadActors()
     }
     
     func loadMoreActores() {
-        
+        self.currentPage += 1
+        self.loadActors()
     }
     
     
