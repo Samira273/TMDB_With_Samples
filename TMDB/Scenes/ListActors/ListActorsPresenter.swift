@@ -17,7 +17,6 @@ class ListActorsPresenter : BasePresenter ,ListActorsPresenterProtocol , ListAct
     required init(view: ListActorsViewController, model: ListActorsModel) {
         self.view = view
         self.model = model
-        self.loadActors()
     }
     
 
@@ -38,12 +37,12 @@ class ListActorsPresenter : BasePresenter ,ListActorsPresenterProtocol , ListAct
         model.getActors(forPage: currentPage, compelation: {result in
             switch result{
                 
-            case .success(_):
-                <#code#>
-            case .failure(_):
-                <#code#>
+            case .success(let actorsResult):
+                self.view?.setData(persons: actorsResult as? [Person] ?? [])
+                
+            case .failure(let error):
+                self.view?.showErrorMessage(title: error.localizedDescription , message: "Network error")
             }
-            
             })
     }
     

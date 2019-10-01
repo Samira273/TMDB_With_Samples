@@ -7,12 +7,8 @@
 //
 
 import Foundation
-protocol ListActorsPresenterProtocol: BasePresenterProtoc
-func getActors(forPage page: Int, compelation: @escaping (Result<Any, Error>) -> Void) {
-    <#code#>
-}
-ol {
-    
+protocol ListActorsPresenterProtocol: BasePresenterProtocol {
+
     var currentPage:Int { get set }
     
     func activateSearch()

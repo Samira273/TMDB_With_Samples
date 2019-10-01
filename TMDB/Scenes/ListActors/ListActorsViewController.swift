@@ -11,7 +11,7 @@ import UIKit
 class ListActorsViewController: BaseViewController<ListActorsPresenter> , UITableViewDelegate , ListActorsViewProtocol {
     
     @IBOutlet weak var actorsTable: UITableView!
-    private var actorsTableDataSource : ListActorsAdaptor?
+     var actorsTableDataSource : ListActorsAdaptor?
     
     
     override func viewDidLoad() {
@@ -20,7 +20,15 @@ class ListActorsViewController: BaseViewController<ListActorsPresenter> , UITabl
         actorsTableDataSource = ListActorsAdaptor()
         actorsTable.dataSource = actorsTableDataSource
         presenter = ListActorsPresenter(view: self, model: ListActorsModel())
+        presenter.loadActors()
         actorsTable.reloadData()
+    }
+    
+    func setData(persons : [Person]){
+        actorsTableDataSource?.add(items: persons)
+        DispatchQueue.main.async {
+            self.actorsTable.reloadData()
+        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -28,5 +36,9 @@ class ListActorsViewController: BaseViewController<ListActorsPresenter> , UITabl
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return CGFloat(120)
+    }
+    
+    func showErrorMessage(title: String?, message: String?) {
+        
     }
 }

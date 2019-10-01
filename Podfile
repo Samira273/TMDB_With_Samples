@@ -7,5 +7,6 @@ target 'TMDB' do
 	use_frameworks!
 	# Pods for Sample MVP
 	pod 'Moya'
+  pod 'SDWebImage'
 
 end

@@ -128,6 +128,15 @@
 			path = "Base Protocols";
 			sourceTree = "<group>";
 		};
+		CE6A0DEA23436ED60020DACF /*  ListActorsUI */ = {
+			isa = PBXGroup;
+			children = (
+				F71BE3D123327286005A0BA4 /* ListActorsViewController.xib */,
+				CE6A0DE223434D4D0020DACF /* ActorsTableViewCell.xib */,
+			);
+			path = " ListActorsUI";
+			sourceTree = "<group>";
+		};
 		F71BE3AE23327215005A0BA4 = {
 			isa = PBXGroup;
 			children = (
@@ -184,13 +193,12 @@
 			isa = PBXGroup;
 			children = (
 				CE047CC323433E61006714ED /* ListActorsProtocols.swift */,
-				F71BE3D023327286005A0BA4 /* ListActorsViewController.swift */,
-				F71BE3D123327286005A0BA4 /* ListActorsViewController.xib */,
 				CE6A0DDB234349690020DACF /* ListActorsModel.swift */,
 				CE6A0DDD234349800020DACF /* ListActorsPresenter.swift */,
 				CE6A0DDF234349930020DACF /* ListActorsAdaptor.swift */,
+				F71BE3D023327286005A0BA4 /* ListActorsViewController.swift */,
 				CE6A0DE123434D4D0020DACF /* ActorsTableViewCell.swift */,
-				CE6A0DE223434D4D0020DACF /* ActorsTableViewCell.xib */,
+				CE6A0DEA23436ED60020DACF /*  ListActorsUI */,
 			);
 			path = ListActors;
 			sourceTree = "<group>";
