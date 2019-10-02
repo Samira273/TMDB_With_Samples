@@ -14,23 +14,23 @@ class ListActorsAdaptor : NSObject , BaseListAdapterProtocol, UITableViewDataSou
     
     
     typealias DataType = Person
-    var list: [Person]?
+    var list: [Person]? = []
     
     var reloadData: (() -> Void)?
     
     var showEmptyState: ((Bool) -> Void)?
     
     func add(item: Person) {
-//        list?.append(item)
+        list?.append(item)
     }
     
     func add(items: [Person]) {
-//        for person in items{
-//            self.add(item: person)
-//        }
+        for person in items{
+            self.add(item: person)
+        }
 //        list = list ?? [] + items
 //        list? += items
-        list = items
+//        list = items
     }
     
     func update(item: Person) {
